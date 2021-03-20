@@ -56,4 +56,8 @@ export class Car {
 
     return actuallyDriven;
   }
+
+  resetDailyOdometer() {
+    this.dailyOdometer = 0;
+  }
 }
