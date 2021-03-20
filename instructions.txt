@@ -1,0 +1,38 @@
+from Marcin Jagieła to Everyone:    5:04  PM
+klasa Samochód
+from Marcin Jagieła to Everyone:    5:04  PM
+Konstruktor - kolor, markę, zuzycie paliwa i poj baku
+from Marcin Jagieła to Everyone:    5:05  PM
+Właściwości - Kolor, Marka, Zuzycie Paliwa, Poj baku
+from Marcin Jagieła to Everyone:    5:05  PM
+Tankuj
+from Marcin Jagieła to Everyone:    5:06  PM
+sprawdzanie - Tankuj(-10)
+from Marcin Jagieła to Everyone:    5:06  PM
+Tankuj(100) a poj baku 50
+from Marcin Jagieła to Everyone:    5:06  PM
+Właściwość StanPaliwa
+from Marcin Jagieła to Everyone:    5:07  PM
+var samochod = new Samochod(Czerwony, Ford Mondeo, 5.6, 60)
+from PrzemysÅaw BarÄâw63625 to Everyone:    5:07  PM
+czy powinno byc cos widać ?
+from PrzemysÅaw BarÄâw63625 to Everyone:    5:07  PM
+juz widzie dziekuje
+from Marcin Jagieła to Everyone:    5:08  PM
+Jedź(40)
+from Marcin Jagieła to Everyone:    5:08  PM
+jedź zmniejsza paliwo i zwiększa stan licznika
+from Marcin Jagieła to Everyone:    5:08  PM
+Właściwość stan licznika
+from Marcin Jagieła to Everyone:    5:08  PM
+ samochod.StanLicznika
+from Marcin Jagieła to Everyone:    5:09  PM
+powinien być licznik dzienny
+from Marcin Jagieła to Everyone:    5:09  PM
+samochod.LicznikDzienny
+from Marcin Jagieła to Everyone:    5:09  PM
+metoda reestuj licznik dzienny
+from Marcin Jagieła to Everyone:    5:09  PM
+samochod.ResetujLicznikDzienny()
+from Marcin Jagieła to Everyone:    5:10  PM
+Licznik dzienny ma limit 999.9
