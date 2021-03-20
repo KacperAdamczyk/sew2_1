@@ -20,7 +20,7 @@ export class Car {
   get TankCapacity() {
     return this.tankCapacity;
   }
-  get Fuel() {
+  get FuelLevel() {
     return this.fuelLevel;
   }
 

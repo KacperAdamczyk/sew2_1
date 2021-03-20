@@ -18,13 +18,13 @@ describe('Car', () => {
   it('should partially refuel', () => {
     car.refuel(25);
 
-    expect(car.Fuel).toEqual(25);
+    expect(car.FuelLevel).toEqual(25);
   });
 
   it('should refuel to the max value', () => {
     car.refuel(100);
 
-    expect(car.Fuel).toEqual(50);
+    expect(car.FuelLevel).toEqual(50);
   });
 
   it('should throw when refueling with a negative value', () => {
