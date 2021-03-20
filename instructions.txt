@@ -1,38 +1,29 @@
-from Marcin Jagieła to Everyone:    5:04  PM
-klasa Samochód
-from Marcin Jagieła to Everyone:    5:04  PM
-Konstruktor - kolor, markę, zuzycie paliwa i poj baku
-from Marcin Jagieła to Everyone:    5:05  PM
-Właściwości - Kolor, Marka, Zuzycie Paliwa, Poj baku
-from Marcin Jagieła to Everyone:    5:05  PM
-Tankuj
-from Marcin Jagieła to Everyone:    5:06  PM
-sprawdzanie - Tankuj(-10)
-from Marcin Jagieła to Everyone:    5:06  PM
-Tankuj(100) a poj baku 50
-from Marcin Jagieła to Everyone:    5:06  PM
-Właściwość StanPaliwa
-from Marcin Jagieła to Everyone:    5:07  PM
-var samochod = new Samochod(Czerwony, Ford Mondeo, 5.6, 60)
-from PrzemysÅaw BarÄâw63625 to Everyone:    5:07  PM
-czy powinno byc cos widać ?
-from PrzemysÅaw BarÄâw63625 to Everyone:    5:07  PM
-juz widzie dziekuje
-from Marcin Jagieła to Everyone:    5:08  PM
-Jedź(40)
-from Marcin Jagieła to Everyone:    5:08  PM
-jedź zmniejsza paliwo i zwiększa stan licznika
-from Marcin Jagieła to Everyone:    5:08  PM
-Właściwość stan licznika
-from Marcin Jagieła to Everyone:    5:08  PM
- samochod.StanLicznika
-from Marcin Jagieła to Everyone:    5:09  PM
-powinien być licznik dzienny
-from Marcin Jagieła to Everyone:    5:09  PM
-samochod.LicznikDzienny
-from Marcin Jagieła to Everyone:    5:09  PM
-metoda reestuj licznik dzienny
-from Marcin Jagieła to Everyone:    5:09  PM
-samochod.ResetujLicznikDzienny()
-from Marcin Jagieła to Everyone:    5:10  PM
-Licznik dzienny ma limit 999.9
+Create a class Car with the following requirements:
+1. Contains constructor accepting parameters:
+   Color (may be string or enum or anything which makes sense)
+   Make  (may be string or enum or anything which makes sense)
+   FuelConsumption (should accept floating point)
+   TankCapacity (can be integer)
+
+2. Exposes readonly properties (or something else if your language does not support properties) for the values provided in constructor
+3. Exposes readonly property for:
+   FuelLevel
+   Odometer
+   DailyOdometer
+
+4. Should have Refuel method accepting litres of fuel with protection from negative value. The FuelLevel cannot be more than TankCapacity
+5. Should have Drive method accepting number of kilometers. The maximum distance you can go depends of the current fuel level and fuel consumption. It should increase Odometer and DailyOdometer. Both odometers should have limits like in real car.
+6. Should have ResetDailyOdometer method which zeroes the daily o
+
+Create a class Network with the following requirements:
+1. Represents a valid computer network in IPv4 standard
+2. Exposes constructor accepting two parameters: string with valid network address and number with valid prefix length. Should throw proper exceptions when values are incorrect.
+3. Should expose readonly properties (or other language constructs if your language does not support properties) for the following:
+	Broadcast - returns string with broadcast address for this network
+	First - returns string with first usable address in this network
+	Last - returns string with last usable address in this network
+	Network - returns string with network address
+
+4. Should have a method to split network into couple of smaller networks. The number of smaller networks is passed in parameters.
+The result should be array of Network.
+5. Should have a method to split network into couple of smaller networks of unequal size. The parameter provided to the method determines the s
