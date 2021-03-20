@@ -75,4 +75,17 @@ describe('Car', () => {
       );
     });
   });
+
+  it('should reset the daily odometer', () => {
+    car.refuel(50);
+    car.drive(2);
+
+    expect(car.DailyOdometer).toEqual(2);
+    expect(car.Odometer).toEqual(2);
+
+    car.resetDailyOdometer();
+
+    expect(car.DailyOdometer).toEqual(0);
+    expect(car.Odometer).toEqual(2);
+  });
 });
